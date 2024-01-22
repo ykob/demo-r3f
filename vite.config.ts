@@ -1,15 +1,15 @@
-import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import { unstable_vitePlugin as remix } from "@remix-run/dev";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [remix()],
   resolve: {
     alias: {
       "~": `${__dirname}/src/`,
     },
   },
   server: {
-    host: true,
+    port: 3000,
   },
 });
