@@ -7,6 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "~": `${__dirname}/src/`,
+      "styled-system": `${__dirname}/styled-system/`,
     },
   },
   server: {
