@@ -1,4 +1,5 @@
 import { defineConfig } from "@pandacss/dev";
+import { globalCss } from "./pandacss";
 
 export default defineConfig({
   // Whether to use css reset
@@ -14,6 +15,8 @@ export default defineConfig({
   theme: {
     extend: {},
   },
+
+  globalCss,
 
   // The output directory for your css system
   outdir: "styled-system",
