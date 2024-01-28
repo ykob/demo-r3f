@@ -1,1 +1,1 @@
-export { globalCss } from "./global-css";
+export { globalCss } from './global-css';

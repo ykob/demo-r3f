@@ -1,13 +1,13 @@
-import { json } from "@remix-run/node";
-import { useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Link } from "@remix-run/react";
+import { Canvas, useFrame } from '@react-three/fiber';
+import { json } from '@remix-run/node';
+import { Link } from '@remix-run/react';
+import { useRef, useState } from 'react';
 
 export const loader = () => {
   return json({});
 };
 
-function Box(props: JSX.IntrinsicElements["mesh"]) {
+function Box(props: JSX.IntrinsicElements['mesh']) {
   const meshRef = useRef<THREE.Mesh>(null!);
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
@@ -26,7 +26,7 @@ function Box(props: JSX.IntrinsicElements["mesh"]) {
       onPointerOut={() => setHover(false)}
     >
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
+      <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
     </mesh>
   );
 }

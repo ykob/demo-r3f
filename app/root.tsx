@@ -1,5 +1,5 @@
-import { Links, Meta, Outlet, Scripts, LiveReload } from "@remix-run/react";
-import "./index.css";
+import { Links, LiveReload, Meta, Outlet, Scripts } from '@remix-run/react';
+import './index.css';
 
 export default function App() {
   return (
