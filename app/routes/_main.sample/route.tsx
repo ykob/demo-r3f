@@ -26,7 +26,7 @@ function Box(props: JSX.IntrinsicElements["mesh"]) {
       onPointerOut={() => setHover(false)}
     >
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
+      <meshStandardMaterial color={hovered ? "green" : "blue"} />
     </mesh>
   );
 }
@@ -37,7 +37,7 @@ export default function Home() {
       <div>
         <h1>Sample</h1>
         <p>
-          <Link to="/sample">Go the other page.</Link>
+          <Link to="/">Back Home</Link>
         </p>
       </div>
       <Canvas>
